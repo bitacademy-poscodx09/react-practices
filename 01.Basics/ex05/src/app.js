@@ -5,7 +5,7 @@ function App() {
 //    App.textContent = "Hello World!!!!";
 //    return App;
       
-    const App = React.createElement('div', null, "Hello World!!!", );
+    const App = React.createElement('div', null, "Hello World!!!");
     return App;
 }
 
