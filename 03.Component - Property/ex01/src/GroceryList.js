@@ -1,7 +1,7 @@
 import React from 'react';
 import GroceryItem from './GroceryItem';
 
-function GroceryList(props) {
+function GroceryList({groceries}) {
     return (
         <ol className={"grocery-list"}>
             <GroceryItem name={'bread'} count={10} />
