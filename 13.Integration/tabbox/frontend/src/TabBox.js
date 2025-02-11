@@ -4,6 +4,7 @@ import TabView from './TabView';
 import data from './assets/json/data';
 
 function TabBox(props) {
+    
     return (
         <div className={"tab-box"}>
             <Tabs tabs={data}/>
