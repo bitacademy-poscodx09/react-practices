@@ -3,61 +3,7 @@ import logo from './assets/images/react-logo.png';
 
 export default function App() {
     const imgRef = useRef(null);
-
-    const onKeyDownInput = (e) => {
-        console.log('keydown:' + e.target.value);
-    };  
-
-    const onKeyUpInput = (e) => {
-        if(e.key === 'Enter') {
-            console.log('keyup:' + e.target.value);
-        }
-    };  
-
-    const onChangeInput = (e) => {
-        console.log('change:' + e.target.value);
-    };  
-
-    const onFocusInput = () => {
-        console.log('focus');
-    };  
-
-    const onBlurInput = () => {
-        console.log('blur');
-    };
     
-    const onMouseOverImg = (e) => {
-        console.log(imgRef.current);
-        console.log('mousemove', `x=${e.clientX}, y=${e.clientY}`);
-    }
-
-    const onMouseMoveImg = (e) => {
-        const offsetTop = imgRef.current.offsetTop;
-        const offsetLeft = imgRef.current.offsetLeft;
-
-        console.log('mouseover', `x=${e.clientX - offsetLeft}, y=${e.clientY-offsetTop}`);
-    }
-
-    const onMouseOutImg = (e) => {
-        console.log('mouseout', `x=${e.clientX}, y=${e.clientY}`);
-    }
-
-    const onMouseDownImg = (e) => {
-        console.log('mousedown', `x=${e.clientX}, y=${e.clientY}`);
-    }
-
-    const onMouseUpImg = (e) => {
-        console.log('mouseup', `x=${e.clientX}, y=${e.clientY}`);
-    }
-
-    const onClickImg = (e) => {
-        console.log('click', `x=${e.clientX}, y=${e.clientY}`);
-    }
-
-    const onDoubleClickImg = (e) => {
-        console.log('dblclick', `x=${e.clientX}, y=${e.clientY}`);
-    }
-
     return (
         <>
             <h2>Event Handler 예제</h2>
