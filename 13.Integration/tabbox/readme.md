@@ -4,9 +4,8 @@
 1.  SpringBoot Landing Server
 2.  빌드 및 실행
     ```    
-    $ mvn -f tabbox/backend exec:exec clean package
-    $ pwd
-    $ java -Dspring.profiles.active=production -jar tabbox/backend/target/tabbox.jar 
+    $ mvn -f 13.Integration/tabbox/backend exec:exec clean package
+    $ java -Dspring.profiles.active=production -jar 13.Integration/tabbox/backend/target/tabbox.jar 
     ```
 
 #### Frontend
