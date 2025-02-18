@@ -64,7 +64,6 @@ spring:
       activate:
          on-profile: production
 
-
    thymeleaf:
       cache: true         
 

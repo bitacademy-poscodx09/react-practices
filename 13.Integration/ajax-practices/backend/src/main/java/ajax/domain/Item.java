@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-@EqualsAndHashCode(exclude = {"type", "name", "image"})
+@EqualsAndHashCode(exclude = {"type", "name", "image"})  //item1.equals(item2)
 public class Item {
 	@NonNull
 	private Long id;
